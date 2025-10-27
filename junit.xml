@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="11" failures="3" errors="0" time="1.828">
+  <testsuite name="EditorPage" errors="0" failures="3" skipped="0" timestamp="2025-10-26T18:02:41" time="1.178" tests="11">
+    <testcase classname="EditorPage renders main sections and toolbar buttons" name="EditorPage renders main sections and toolbar buttons" time="0.049">
+      <failure>TestingLibraryElementError: Found multiple elements with the text: /Professional Summary/i
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+&lt;span
+  class=&quot;section-name&quot;
+&gt;
+  Professional Summary
+&lt;/span&gt;
+
+Ignored nodes: comments, script, style
+&lt;div
+  class=&quot;resume-section-title&quot;
+&gt;
+  Professional Summary
+&lt;/div&gt;
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;header&gt;
+      &lt;div
+        class=&quot;container&quot;
+      &gt;
+        &lt;nav&gt;
+          &lt;a
+            class=&quot;logo&quot;
+            href=&quot;index.html&quot;
+          &gt;
+            &lt;i
+              class=&quot;fa-solid fa-file-circle-check logo-icon&quot;
+            /&gt;
+            ResumeAI
+          &lt;/a&gt;
+          &lt;ul
+            class=&quot;nav-links&quot;
+          &gt;
+            &lt;li&gt;
+              &lt;a
+                href=&quot;#&quot;
+              &gt;
+                Dashboard
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a
+                href=&quot;#&quot;
+              &gt;
+                Templates
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a
+                href=&quot;#&quot;
+              &gt;
+                Help
+              &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;div
+            class=&quot;nav-buttons&quot;
+          &gt;
+            &lt;button
+              class=&quot;button button-secondary&quot;
+              id=&quot;saveBtn&quot;
+            &gt;
+              Save
+            &lt;/button&gt;
+            &lt;button
+              class=&quot;button&quot;
+              id=&quot;downloadBtn&quot;
+            &gt;
+              Download
+            &lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/nav&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;div
+      class=&quot;editor-container&quot;
+    &gt;
+      &lt;div
+        class=&quot;sidebar&quot;
+      &gt;
+        &lt;div
+          class=&quot;ats-score-container&quot;
+        &gt;
+          &lt;h3
+            class=&quot;score-title&quot;
+          &gt;
+            ATS Compatibility Score
+          &lt;/h3&gt;
+          &lt;div
+            class=&quot;score-circle&quot;
+          &gt;
+            &lt;div
+              class=&quot;score-inner-circle&quot;
+            &gt;
+              &lt;div
+                class=&quot;score-value&quot;
+              &gt;
+                75%
+              &lt;/div&gt;
+              &lt;div
+                class=&quot;score-label&quot;
+              &gt;
+                Good
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;score-message&quot;
+          &gt;
+            Your resume is performing well but has room for improvement
+          &lt;/div&gt;
+          &lt;button
+            class=&quot;button&quot;
+            id=&quot;optimizeBtn&quot;
+          &gt;
+            Optimize Resume
+          &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;section-analytics&quot;
+        &gt;
+          &lt;h3
+            class=&quot;section-title&quot;
+          &gt;
+            Section Analysis
+          &lt;/h3&gt;
+          &lt;div
+            class=&quot;section-item&quot;
+          &gt;
+            &lt;div
+              class=&quot;section-header&quot;
+            &gt;
+              &lt;span
+                class=&quot;section-name&quot;
+              &gt;
+                Contact Information
+              &lt;/span&gt;
+              &lt;span
+                class=&quot;section-score&quot;
+              &gt;
+                100%
+              &lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;progress-bar&quot;
+            &gt;
+              &lt;div
+                class=&quot;progress-value&quot;
+                style=&quot;width: 100%;&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;section-item&quot;
+          &gt;
+            &lt;div
+              class=&quot;section-header&quot;
+            &gt;
+              &lt;span
+                class=&quot;section-name&quot;
+              &gt;
+                Professional Summary
+              &lt;/span&gt;
+              &lt;span
+                class=&quot;section-score&quot;
+              &gt;
+                85%
+              &lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;progress-bar&quot;
+            &gt;
+              &lt;div
+                class=&quot;progress-value&quot;
+                style=&quot;width: 85%;&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;section-item&quot;
+          &gt;
+            &lt;div
+              class=&quot;section-header&quot;
+            &gt;
+              &lt;span
+                class=&quot;section-name&quot;
+              &gt;
+                Work Experience
+              &lt;/span&gt;
+              &lt;span
+                class=&quot;section-score warning&quot;
+              &gt;
+                65%
+              &lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;progress-bar&quot;
+            &gt;
+              &lt;div
+                class=&quot;progress-value&quot;
+                style=&quot;width: 65%;&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;section-item&quot;
+          &gt;
+            &lt;div
+              class=&quot;section-header&quot;
+            &gt;
+              &lt;span
+                class=&quot;section-name&quot;
+              &gt;
+                Education
+              &lt;/span&gt;
+              &lt;span
+                class=&quot;section-score&quot;
+              &gt;
+                80%
+            ...
+    at Object.getElementError (/Users/swadhakhatod/resumestuff/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at getElementError (/Users/swadhakhatod/resumestuff/node_modules/@testing-library/dom/dist/query-helpers.js:20:35)
+    at getMultipleElementsFoundError (/Users/swadhakhatod/resumestuff/node_modules/@testing-library/dom/dist/query-helpers.js:23:10)
+    at /Users/swadhakhatod/resumestuff/node_modules/@testing-library/dom/dist/query-helpers.js:55:13
+    at getByText (/Users/swadhakhatod/resumestuff/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+    at Object.&lt;anonymous&gt; (/Users/swadhakhatod/resumestuff/src/components/EditorPage.test.jsx:12:19)
+    at Promise.then.completed (/Users/swadhakhatod/resumestuff/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/swadhakhatod/resumestuff/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/Users/swadhakhatod/resumestuff/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/Users/swadhakhatod/resumestuff/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/Users/swadhakhatod/resumestuff/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/Users/swadhakhatod/resumestuff/node_modules/jest-circus/build/run.js:60:9)
+    at run (/Users/swadhakhatod/resumestuff/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/swadhakhatod/resumestuff/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/Users/swadhakhatod/resumestuff/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/Users/swadhakhatod/resumestuff/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/Users/swadhakhatod/resumestuff/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/Users/swadhakhatod/resumestuff/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/Users/swadhakhatod/resumestuff/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/Users/swadhakhatod/resumestuff/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/Users/swadhakhatod/resumestuff/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/Users/swadhakhatod/resumestuff/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/Users/swadhakhatod/resumestuff/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    </testcase>
+    <testcase classname="EditorPage bold/italic/underline trigger execCommand" name="EditorPage bold/italic/underline trigger execCommand" time="0.357">
+      <failure>TestingLibraryElementError: Unable to find an accessible element with the role &quot;textbox&quot; and name `/resume content/i`
+
+Here are the accessible roles:
+
+  banner:
+
+  Name &quot;&quot;:
+  &lt;header /&gt;
+
+  --------------------------------------------------
+  navigation:
+
+  Name &quot;&quot;:
+  &lt;nav /&gt;
+
+  --------------------------------------------------
+  link:
+
+  Name &quot;ResumeAI&quot;:
+  &lt;a
+    class=&quot;logo&quot;
+    href=&quot;index.html&quot;
+  /&gt;
+
+  Name &quot;Dashboard&quot;:
+  &lt;a
+    href=&quot;#&quot;
+  /&gt;
+
+  Name &quot;Templates&quot;:
+  &lt;a
+    href=&quot;#&quot;
+  /&gt;
+
+  Name &quot;Help&quot;:
+  &lt;a
+    href=&quot;#&quot;
+  /&gt;
+
+  --------------------------------------------------
+  list:
+
+  Name &quot;&quot;:
+  &lt;ul
+    class=&quot;nav-links&quot;
+  /&gt;
+
+  --------------------------------------------------
+  listitem:
+
+  Name &quot;&quot;:
+  &lt;li /&gt;
+
+  Name &quot;&quot;:
+  &lt;li /&gt;
+
+  Name &quot;&quot;:
+  &lt;li /&gt;
+
+  --------------------------------------------------
+  button:
+
+  Name &quot;Save&quot;:
+  &lt;button
+    class=&quot;button button-secondary&quot;
+    id=&quot;saveBtn&quot;
+  /&gt;
+
+  Name &quot;Download&quot;:
+  &lt;button
+    class=&quot;button&quot;
+    id=&quot;downloadBtn&quot;
+  /&gt;
+
+  Name &quot;Optimize Resume&quot;:
+  &lt;button
+    class=&quot;button&quot;
+    id=&quot;optimizeBtn&quot;
+  /&gt;
+
+  Name &quot;&quot;:
+  &lt;button
+    class=&quot;icon-button&quot;
+    data-cmd=&quot;bold&quot;
+  /&gt;
+
+  Name &quot;&quot;:
+  &lt;button
+    class=&quot;icon-button&quot;
+    data-cmd=&quot;italic&quot;
+  /&gt;
+
+  Name &quot;&quot;:
+  &lt;button
+    class=&quot;icon-button&quot;
+    data-cmd=&quot;underline&quot;
+  /&gt;
+
+  Name &quot;&quot;:
+  &lt;button
+    class=&quot;icon-button&quot;
+    data-cmd=&quot;insertUnorderedList&quot;
+  /&gt;
+
+  Name &quot;&quot;:
+  &lt;button
+    class=&quot;icon-button&quot;
+    data-cmd=&quot;insertOrderedList&quot;
+  /&gt;
+
+  Name &quot;&quot;:
+  &lt;button
+    class=&quot;icon-button&quot;
+    data-cmd=&quot;justifyLeft&quot;
+  /&gt;
+
+  Name &quot;&quot;:
+  &lt;button
+    class=&quot;icon-button&quot;
+    data-cmd=&quot;justifyCenter&quot;
+  /&gt;
+
+  Name &quot;&quot;:
+  &lt;button
+    class=&quot;icon-button&quot;
+    data-cmd=&quot;justifyRight&quot;
+  /&gt;
+
+  Name &quot;Upload New&quot;:
+  &lt;button
+    class=&quot;button button-secondary&quot;
+    id=&quot;uploadBtn&quot;
+  /&gt;
+
+  Name &quot;Auto-Optimize&quot;:
+  &lt;button
+    class=&quot;button&quot;
+    id=&quot;autoOptimizeBtn&quot;
+  /&gt;
+
+  --------------------------------------------------
+  heading:
+
+  Name &quot;ATS Compatibility Score&quot;:
+  &lt;h3
+    class=&quot;score-title&quot;
+  /&gt;
+
+  Name &quot;Section Analysis&quot;:
+  &lt;h3
+    class=&quot;section-title&quot;
+  /&gt;
+
+  Name &quot;Keyword Analysis&quot;:
+  &lt;h3
+    class=&quot;section-title&quot;
+  /&gt;
+
+  Name &quot;Improvement Suggestions&quot;:
+  &lt;h3
+    class=&quot;section-title&quot;
+  /&gt;
+
+  --------------------------------------------------
+  paragraph:
+
+  Name &quot;&quot;:
+  &lt;p
+    class=&quot;suggestion-text&quot;
+  /&gt;
+
+  Name &quot;&quot;:
+  &lt;p
+    class=&quot;suggestion-text&quot;
+  /&gt;
+
+  Name &quot;&quot;:
+  &lt;p
+    class=&quot;suggestion-text&quot;
+  /&gt;
+
+  Name &quot;&quot;:
+  &lt;p /&gt;
+
+  --------------------------------------------------
+  combobox:
+
+  Name &quot;&quot;:
+  &lt;select
+    class=&quot;select-format&quot;
+    id=&quot;formatSelect&quot;
+  /&gt;
+
+  --------------------------------------------------
+  option:
+
+  Name &quot;Paragraph&quot;:
+  &lt;option
+    value=&quot;p&quot;
+  /&gt;
+
+  Name &quot;Heading 1&quot;:
+  &lt;option
+    value=&quot;h1&quot;
+  /&gt;
+
+  Name &quot;Heading 2&quot;:
+  &lt;option
+    value=&quot;h2&quot;
+  /&gt;
+
+  Name &quot;Heading 3&quot;:
+  &lt;option
+    value=&quot;h3&quot;
+  /&gt;
+
+  --------------------------------------------------
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;header&gt;
+      &lt;div
+        class=&quot;container&quot;
+      &gt;
+        &lt;nav&gt;
+          &lt;a
+            class=&quot;logo&quot;
+            href=&quot;index.html&quot;
+          &gt;
+            &lt;i
+              class=&quot;fa-solid fa-file-circle-check logo-icon&quot;
+            /&gt;
+            ResumeAI
+          &lt;/a&gt;
+          &lt;ul
+            class=&quot;nav-links&quot;
+          &gt;
+            &lt;li&gt;
+              &lt;a
+                href=&quot;#&quot;
+              &gt;
+                Dashboard
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a
+                href=&quot;#&quot;
+              &gt;
+                Templates
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a
+                href=&quot;#&quot;
+              &gt;
+                Help
+              &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;div
+            class=&quot;nav-buttons&quot;
+          &gt;
+            &lt;button
+              class=&quot;button button-secondary&quot;
+              id=&quot;saveBtn&quot;
+            &gt;
+              Save
+            &lt;/button&gt;
+            &lt;button
+              class=&quot;button&quot;
+              id=&quot;downloadBtn&quot;
+            &gt;
+              Download
+            &lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/nav&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;div
+      class=&quot;editor-container&quot;
+    &gt;
+      &lt;div
+        class=&quot;sidebar&quot;
+      &gt;
+        &lt;div
+          class=&quot;ats-score-container&quot;
+        &gt;
+          &lt;h3
+            class=&quot;score-title&quot;
+          &gt;
+            ATS Compatibility Score
+          &lt;/h3&gt;
+          &lt;div
+            class=&quot;score-circle&quot;
+          &gt;
+            &lt;div
+              class=&quot;score-inner-circle&quot;
+            &gt;
+              &lt;div
+                class=&quot;score-value&quot;
+              &gt;
+                75%
+              &lt;/div&gt;
+              &lt;div
+                class=&quot;score-label&quot;
+              &gt;
+                Good
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;score-message&quot;
+          &gt;
+            Your resume is performing well but has room for improvement
+          &lt;/div&gt;
+          &lt;button
+            class=&quot;button&quot;
+            id=&quot;optimizeBtn&quot;
+          &gt;
+            Optimize Resume
+          &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;section-analytics&quot;
+        &gt;
+          &lt;h3
+            class=&quot;section-title&quot;
+          &gt;
+            Section Analysis
+          &lt;/h3&gt;
+          &lt;div
+            class=&quot;section-item&quot;
+          &gt;
+            &lt;div
+              class=&quot;section-header&quot;
+            &gt;
+              &lt;span
+                class=&quot;section-name&quot;
+              &gt;
+                Contact Information
+              &lt;/span&gt;
+              &lt;span
+                class=&quot;section-score&quot;
+              &gt;
+                100%
+              &lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;progress-bar&quot;
+            &gt;
+              &lt;div
+                class=&quot;progress-value&quot;
+                style=&quot;width: 100%;&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;section-item&quot;
+          &gt;
+            &lt;div
+              class=&quot;section-header&quot;
+            &gt;
+              &lt;span
+                class=&quot;section-name&quot;
+              &gt;
+                Professional Summary
+              &lt;/span&gt;
+              &lt;span
+                class=&quot;section-score&quot;
+              &gt;
+                85%
+              &lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;progress-bar&quot;
+            &gt;
+              &lt;div
+                class=&quot;progress-value&quot;
+                style=&quot;width: 85%;&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;section-item&quot;
+          &gt;
+            &lt;div
+              class=&quot;section-header&quot;
+            &gt;
+              &lt;span
+                class=&quot;section-name&quot;
+              &gt;
+                Work Experience
+              &lt;/span&gt;
+              &lt;span
+                class=&quot;section-score warning&quot;
+              &gt;
+                65%
+              &lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;progress-bar&quot;
+            &gt;
+              &lt;div
+                class=&quot;progress-value&quot;
+                style=&quot;width: 65%;&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;section-item&quot;
+          &gt;
+            &lt;div
+              class=&quot;section-header&quot;
+            &gt;
+              &lt;span
+                class=&quot;section-name&quot;
+              &gt;
+                Education
+              &lt;/span&gt;
+              &lt;span
+                class=&quot;section-score&quot;
+              &gt;
+                80%
+            ...
+    at Object.getElementError (/Users/swadhakhatod/resumestuff/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at /Users/swadhakhatod/resumestuff/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+    at /Users/swadhakhatod/resumestuff/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+    at getByRole (/Users/swadhakhatod/resumestuff/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+    at Object.&lt;anonymous&gt; (/Users/swadhakhatod/resumestuff/src/components/EditorPage.test.jsx:20:27)
+    at Promise.then.completed (/Users/swadhakhatod/resumestuff/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/swadhakhatod/resumestuff/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/Users/swadhakhatod/resumestuff/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/Users/swadhakhatod/resumestuff/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/Users/swadhakhatod/resumestuff/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/Users/swadhakhatod/resumestuff/node_modules/jest-circus/build/run.js:60:9)
+    at run (/Users/swadhakhatod/resumestuff/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/swadhakhatod/resumestuff/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/Users/swadhakhatod/resumestuff/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/Users/swadhakhatod/resumestuff/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/Users/swadhakhatod/resumestuff/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/Users/swadhakhatod/resumestuff/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/Users/swadhakhatod/resumestuff/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/Users/swadhakhatod/resumestuff/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/Users/swadhakhatod/resumestuff/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/Users/swadhakhatod/resumestuff/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/Users/swadhakhatod/resumestuff/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    </testcase>
+    <testcase classname="EditorPage list and alignment commands execute" name="EditorPage list and alignment commands execute" time="0.014">
+    </testcase>
+    <testcase classname="EditorPage format select applies formatBlock" name="EditorPage format select applies formatBlock" time="0.011">
+    </testcase>
+    <testcase classname="EditorPage toolbar mousedown keeps editor focused" name="EditorPage toolbar mousedown keeps editor focused" time="0.01">
+    </testcase>
+    <testcase classname="EditorPage editor mousedown schedules focus using timers" name="EditorPage editor mousedown schedules focus using timers" time="0.01">
+    </testcase>
+    <testcase classname="EditorPage Upload New triggers hidden input click" name="EditorPage Upload New triggers hidden input click" time="0.035">
+    </testcase>
+    <testcase classname="EditorPage PDF upload renders canvases for each page" name="EditorPage PDF upload renders canvases for each page" time="0.034">
+    </testcase>
+    <testcase classname="EditorPage invalid upload shows alert" name="EditorPage invalid upload shows alert" time="0.02">
+      <failure>Error: expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+Expected: StringMatching /valid PDF/i
+
+Number of calls: 0
+    at Object.&lt;anonymous&gt; (/Users/swadhakhatod/resumestuff/src/components/EditorPage.test.jsx:109:26)</failure>
+    </testcase>
+    <testcase classname="EditorPage Download snapshots DOM and saves PDF" name="EditorPage Download snapshots DOM and saves PDF" time="0.045">
+    </testcase>
+    <testcase classname="EditorPage execCommand returning false does not crash" name="EditorPage execCommand returning false does not crash" time="0.01">
+    </testcase>
+  </testsuite>
+</testsuites>
