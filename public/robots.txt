@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://resumestuff.vercel.app/sitemap.xml
