@@ -10,12 +10,48 @@ import {
   faFileExport,
   faUserTie,
 } from '@fortawesome/free-solid-svg-icons';
+import { Helmet } from 'react-helmet-async';
 
 export default function Home() {
   const navigate = useNavigate();
 
   return (
     <>
+      <Helmet>
+        <title>ResumeAI — ATS Resume Checker, Score & Optimizer</title>
+        <meta
+          name="description"
+          content="Upload your resume to get an ATS score, keyword match and instant fixes. Optimize your resume for ATS systems in minutes with ResumeAI."
+        />
+        <link rel="canonical" href="https://resumestuff.vercel.app/" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="ResumeAI — ATS Resume Checker & Optimizer" />
+        <meta property="og:description" content="Get your resume ATS-ready in minutes. Upload, score, and auto-optimize." />
+        <meta property="og:url" content="https://resumestuff.vercel.app/" />
+        <meta property="og:image" content="https://resumestuff.vercel.app/og.jpg" />
+
+        {/* Twitter Cards */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="ResumeAI — ATS Resume Checker & Optimizer" />
+        <meta name="twitter:description" content="Upload, get ATS score, and auto-optimize your resume." />
+        <meta name="twitter:image" content="https://resumestuff.vercel.app/og.jpg" />
+
+        {/* Schema.org JSON-LD */}
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "ResumeAI",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web",
+            "url": "https://resumestuff.vercel.app/",
+            "description": "ATS resume checker and optimizer with real-time scoring and keyword match.",
+            "offers": {"@type":"Offer","price":"0","priceCurrency":"USD"}
+          }
+        `}</script>
+      </Helmet>
       <header className={styles.header}>
         <div className={styles.container}>
           <nav className={styles.nav}>
@@ -24,9 +60,9 @@ export default function Home() {
               ResumeAI
             </div>
             <ul className={styles.navLinks}>
-              <li><a href="#">Features</a></li>
+              <li><a href="#features">Features</a></li>
               
-              <li><a href="#">About</a></li>
+              <li><a href="#about">About</a></li>
             </ul>
             <button className={styles.ctaButton} onClick={() => navigate('/resume-editor')}>
               Start Optimizing
@@ -55,7 +91,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={styles.features}>
+        <section className={styles.features} id="features">
           <div className={styles.container}>
             <h2 className={styles.sectionTitle}>Why Choose ResumeAI?</h2>
             <div className={styles.featureGrid}>
@@ -90,6 +126,19 @@ export default function Home() {
                 <p className={styles.featureDescription}>Access professional templates tailored to your specific industry and career level.</p>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className={styles.features} id="about">
+          <div className={styles.container}>
+            <h2 className={styles.sectionTitle}>About ATS Optimization</h2>
+            <p>
+              ResumeAI helps you tailor your resume to Applicant Tracking Systems by analyzing structure, keywords and clarity.
+              Upload your resume, paste a target job description and get a compatibility score with section‑by‑section guidance.
+              The tool highlights missing skills, suggests stronger action verbs, and flags formatting issues that may confuse ATS parsers.
+              You can iterate in real time, watch the score change, and export recruiter‑friendly PDFs or DOCX files. Our goal is to make
+              tailoring fast, transparent and effective for every job application.
+            </p>
           </div>
         </section>
 
@@ -186,6 +235,16 @@ export default function Home() {
                 </ul>
               </div>
             ))}
+            <div className={styles.footerLinks}>
+              <h3>Social</h3>
+              <ul>
+                <li><a href="https://www.facebook.com/resumeaiapp" target="_blank" rel="nofollow noopener">Facebook</a></li>
+                <li><a href="https://x.com/resumeaiapp" target="_blank" rel="nofollow noopener">X (Twitter)</a></li>
+                <li><a href="https://www.instagram.com/resumeaiapp/" target="_blank" rel="nofollow noopener">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/resumeaiapp/" target="_blank" rel="nofollow noopener">LinkedIn</a></li>
+                <li><a href="https://www.youtube.com/@resumeaiapp" target="_blank" rel="nofollow noopener">YouTube</a></li>
+              </ul>
+            </div>
           </div>
           <div className={styles.copyright}>
             &copy; 2025 ResumeAI. All rights reserved.

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import './EditorPage.css';
 
 const EditorPage = () => {
@@ -153,7 +153,37 @@ const EditorPage = () => {
       <Helmet>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Resume Editor | ResumeAI</title>
+        <title>Resume Editor | ResumeAI — Improve ATS Score & Download</title>
+        <meta
+          name="description"
+          content="Edit your resume, boost ATS score with keyword suggestions, and download optimized PDF/DOCX using the ResumeAI editor."
+        />
+        <link rel="canonical" href="https://resumestuff.vercel.app/resume-editor" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Resume Editor | ResumeAI — Improve ATS Score & Download" />
+        <meta property="og:description" content="Edit, optimize for ATS, and export recruiter‑ready resumes in minutes." />
+        <meta property="og:url" content="https://resumestuff.vercel.app/resume-editor" />
+        <meta property="og:image" content="https://resumestuff.vercel.app/og.jpg" />
+
+        {/* Twitter Cards */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Resume Editor | ResumeAI — Improve ATS Score & Download" />
+        <meta name="twitter:description" content="Optimize your resume for ATS and export as PDF/DOCX." />
+        <meta name="twitter:image" content="https://resumestuff.vercel.app/og.jpg" />
+
+        {/* Schema.org JSON-LD for this page */}
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Resume Editor | ResumeAI",
+            "url": "https://resumestuff.vercel.app/resume-editor",
+            "description": "ATS resume editor to improve compatibility score, add keywords and download optimized files."
+          }
+        `}</script>
+
         {/* Font Awesome */}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
         {/* PDF.js */}
